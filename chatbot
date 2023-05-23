@@ -1,0 +1,43 @@
+import random
+
+# Name
+name = input("What is your first name?\n")
+
+# Shoes
+shoes = input("What shoes do you like?\n")
+shoes = shoes.lower()
+
+happyResponse = ["Nice, casual is always in!\n", "That’s in right now.\n", "Wow, so stylish!.\n", "That's a good choice."]
+
+
+if shoes == "converse":
+    print(happyResponse[random.randrange(0, len(happyResponse) - 1)])
+elif shoes == "adidas" or shoes == "nike":
+    print(happyResponse[random.randrange(0, len(happyResponse) - 1)])
+else:
+    print(happyResponse[random.randrange(0, len(happyResponse) - 1)])
+
+# Age
+age = int(input("How old are you?\n"))
+if age > 1 and age < 20:
+    print(str(age) + " is a good age to start exploring style.")
+elif age > 20 and age < 40:
+    print("It's not too late to explore your style!")
+else:
+    print("I'll try my best to get your style")
+print("I think I might know your style.")
+
+# Top
+top = input("So, " + name + ", what is your favorite top?")
+top = top.lower()
+
+if top == "graphic tees" or top == "graphic t":
+    print(happyResponse[random.randrange(0, len(happyResponse) - 1)])
+elif top == "hoodie":
+    print("Useful for chilly days")
+else:
+    print("You got it!")
+
+HowAccurate = input("How accurate was this chat?")
+Enjoy = input("Did you enjoy it?")
+print("Thanks!")
